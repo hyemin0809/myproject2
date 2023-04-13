@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+/* 초기화 */
+*{
+    margin: 0px auto;
+    padding: 0px;
+    list-style: none;
+    font-family: "경기천년제목 light";
+    color: #333333;
+}
+body{
+    width: 100%;
+    background-color: rgb(255, 252, 249);
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px solid #ddd;    
+}
+.sns{
+    float: right;
+    width: 200px;    
+    height: 140px;
+    
+}
+.sns img{
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+}
+.sns img:hover{
+    opacity: 0.4;
+}
+.top{
+    
+    width: 100%;
+    height: 140px;
+    background-color: rgb(250, 242, 230);
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 140px;
+}
+.logo img{
+    margin-top: 30px;
+}
+
+.navi{
+    width: calc(100% - 400px);
+    float: right;
+    margin-top: 60px;
+}
+
+.navi>li{
+    float: left;   
+}
+.navi>li>a{
+    width: 180px;
+    height: 40px;
+    margin-left: 110px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: pink;
+    color: #000;
+    border-radius: 8px;
+}
+.navi>li>a:hover{
+    background-color: skyblue;
+}
+.submenu{
+    width: 180px;
+    height: 120px;
+    background-color: lightblue;
+    z-index: 3;
+    margin-left: 110px;
+    position: absolute;
+    border-radius: 10px;
+    display: none;
+}
+.submenu>li>a{
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background-color: lightblue;
+    color: #333;
+    text-align: center;
+}
+.submenu>li>a:hover{
+    background-color: pink;
+}
+/* visual */
+figure {
+    width: 100%;
+    height: 80px;
+    background: lightgray;
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+    
+    
+}
+figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+figure .inner {
+    width: 1280px;
+    margin: 0px auto;
+    position: relative;
+    text-align: center;
+}
+figure .inner h1 {
+    font: bold 30px/1;
+    color: #fff;
+    
+    margin-top: 10px;
+    
+   
+    
+}
+figure .inner p {
+    font: normal 16px/1.4;
+    color: #888;
+    /* margin-bottom: 60px;
+     */
+    
+}
+figure .inner a {
+    display: block;
+    width: 400px;
+    height: 30px;
+    border: 1px solid #bbb;
+    font: bold 11px/30px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+}
+figure .inner a:hover {
+    background: #fff;
+    color: #555;
+}
+
+/* news */
+section {
+    width: 100%;
+    padding: 50px 0px;
+}
+section .inner {
+    width: 1180px;
+    margin: 0px auto;
+}
+section .inner h1 {
+    font: bold 24px/1 ;
+    color: #555;
+    text-align:  left;
+    margin-bottom: 20px;
+}
+.wrap{
+    width: 1000px;
+    height: 500px;
+}
+.tab{
+    float: left;
+    width: 300px;
+}
+.wrap h4{
+    float: left;
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    color: #333;
+    text-align: center;
+}
+
+.wrap>div{
+    float: left;
+    width: 290px;
+    margin-left: 10px;
+}
+
+.wrap ul{
+    float: left;
+    width: 800px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.wrap li span{
+    float: right;
+    margin-right: 5px;
+}
+.wrap li:nth-of-type(2n){
+    background-color: #ccc;
+}
+.wrap li:hover{
+    font-weight: bold;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 200px;
+    background: rgb(250, 242, 230);
+    border-top:  1px solid burlywood;
+}
+.upper{
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: burlywood;
+}
+.btlogo{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.btlogo img{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.adress{
+    float: left;
+    width: calc(100% - 200px - 300px);
+    height: 100px;
+    font-size: 14px;
+}
+.adress>li{
+    margin-top: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+.copy{
+    float: left;
+    width: calc(100% - 200px - 300px);
+    height: 100px;
+    font-size: 14px;
+}
+.copy>li{
+    text-align: center;
+}
+.btsns{
+    float: right;
+    width: 300px;
+    height: 150px;
+}
+.btsns img{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 80px;
+    margin-left: 20px;
+}
